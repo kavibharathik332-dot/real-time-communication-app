@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Chat - Real-Time Communication App{% endblock %}
+{% block content %}
+<div class="chat-app" id="chat-app" data-user-id="{{ user_id }}" data-username="{{ username }}">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="app-name">💬 Real-Time Chat</div>
+      <div class="current-user">
+        <span class="status-dot online"></span>
+        <span class="current-username">{{ username }}</span>
+      </div>
+      <a href="{{ url_for('main.logout') }}" class="logout-link">Logout</a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search-users" placeholder="Search users...">
+    </div>
+
+    <ul class="user-list" id="user-list">
+      <!-- Users are loaded here by script.js -->
+      <li class="user-list-empty">Loading users...</li>
+    </ul>
+  </aside>
+
+  <main class="chat-main">
+    <div class="chat-placeholder" id="chat-placeholder">
+      <div class="placeholder-icon">💬</div>
+      <p>Select a user from the left to start chatting</p>
+    </div>
+
+    <div class="chat-window hidden" id="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-name" id="chat-header-name">Username</div>
+        <div class="chat-header-status" id="chat-header-status">Offline</div>
+      </div>
+
+      <div class="chat-messages" id="chat-messages"></div>
+
+      <div class="typing-indicator hidden" id="typing-indicator">typing...</div>
+
+      <form class="chat-input-form" id="chat-input-form">
+        <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" maxlength="2000">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div class="chat-error hidden" id="chat-error"></div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}

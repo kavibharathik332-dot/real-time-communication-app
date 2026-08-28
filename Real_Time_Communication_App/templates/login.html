@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Login - Real-Time Communication App{% endblock %}
+{% block content %}
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">💬</div>
+    <h1 class="auth-title">Real-Time Communication App</h1>
+    <p class="auth-subtitle">Log in to continue chatting</p>
+
+    <form method="POST" action="{{ url_for('main.login') }}" class="auth-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" value="{{ username or '' }}" placeholder="Enter your username" required autofocus>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+    <p class="auth-switch">
+      Don't have an account? <a href="{{ url_for('main.register') }}">Register here</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
