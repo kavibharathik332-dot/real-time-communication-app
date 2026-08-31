@@ -1,7 +1,7 @@
 # 💬 Real-Time Communication App
 
 <p align="center">
-  <img src="images/banner.png" alt="Real-Time Communication App Banner" width="100%">
+  <img src="static/images/banner.png" alt="Real-Time Communication App Banner" width="100%">
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ The application uses **Flask-SocketIO** to provide instant communication without
 ### 🔐 Login Page
 
 <p align="center">
-  <img src="images/login.png" alt="Login Page" width="85%">
+ <img src="static/images/login.png" alt="Login Page" width="85%">
 </p>
 
 The login page allows registered users to securely access the application using their username and password.
@@ -59,7 +59,7 @@ The login page allows registered users to securely access the application using 
 ### 💬 Chat Interface
 
 <p align="center">
-  <img src="images/chat.png" alt="Chat Interface" width="85%">
+ <img src="static/images/chat.png" alt="Chat Interface" width="85%">
 </p>
 
 The chat interface provides real-time communication between registered users with message timestamps, online status, user search, and typing indicators.
