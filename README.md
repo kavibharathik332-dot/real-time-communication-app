@@ -352,6 +352,32 @@ SECRET_KEY=your-long-random-secret-key
 After deployment, Render provides a public URL for accessing the application.
 
 ---
+## 🌐 Live Demo
+
+🚀 **Deployed Application:**  
+👉 [Open Real-Time Communication App](https://real-time-communication-app-3.onrender.com)
+
+The application is deployed on Render and can be accessed directly through the link above.
+
+---
+
+## 🎥 Project Demo Video
+
+▶️ **Demo Video:**  
+👉 [Watch the Project Demo on Google Drive](https://drive.google.com/file/d/1ISdbT1CZq4YhkeQuFd1n3uglDrUFVLGg/view?usp=drive_link)
+
+The demo video shows:
+
+- User registration
+- User login
+- One-to-one real-time messaging
+- Online / offline status
+- Typing indicator
+- Message timestamps
+- User search
+- Logout functionality
+
+> **Note:** Replace `YOUR_GOOGLE_DRIVE_VIDEO_LINK` with your actual Google Drive sharing link.
 
 ## ⚠️ Deployment Note
 
